@@ -4,7 +4,7 @@ import google.generativeai as genai
 # ----------------- CONFIGURATION -----------------
 # Page Configuration
 st.set_page_config(page_title="Lynn – Daily Productivity Commander", layout="wide")
-st.title("🫡 Lynn – The Agent's Daily Productivity Commander")
+st.title("Lynn – The Agent's Daily Productivity Commander")
 
 # 1. Secure API Key Configuration
 try:
@@ -139,4 +139,5 @@ if prompt := st.chat_input("Lynn, what should I do today? / Report today's execu
         st.session_state.messages.append({"role": "model", "content": text_response})
         
     except Exception as e:
+
         st.error(f"An error occurred: {e}")

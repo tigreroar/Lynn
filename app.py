@@ -4,7 +4,7 @@ import google.generativeai as genai
 # ----------------- CONFIGURATION -----------------
 # Page Configuration
 st.set_page_config(page_title="Lynn – Productivity Coach", layout="wide")
-st.title("🫡 Lynn – Real Estate Productivity Coach")
+st.title(" Lynn – Real Estate Productivity Coach")
 
 # 1. Secure API Key Configuration
 try:
@@ -214,3 +214,4 @@ if prompt := st.chat_input("Start your coaching session..."):
         
     except Exception as e:
         st.error(f"An error occurred: {e}")
+

@@ -139,7 +139,7 @@ The language for all user interaction MUST be in **English**.
 # 3. Model Configuration
 # Usamos el modelo capaz de File Search
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash", 
+    model_name="gemini-2.0-flash", 
     system_instruction=system_instruction
 )
 
@@ -214,4 +214,5 @@ if prompt := st.chat_input("Start your coaching session..."):
         
     except Exception as e:
         st.error(f"An error occurred: {e}")
+
 

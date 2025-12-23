@@ -6,6 +6,7 @@ import os  # <--- IMPORTANTE: Necesario para leer variables de Railway
 # Page Configuration
 st.set_page_config(page_title="Agent Coach AI – Productivity Coach", layout="wide")
 st.title(" Agent Coach AI – Real Estate Productivity Coach")
+st.caption("Powered by Agent Coach AI")
 
 # 1. Secure API Key Configuration (CORREGIDO PARA RAILWAY)
 # Primero intentamos obtener la clave desde las Variables de Entorno (Railway)
@@ -382,4 +383,5 @@ if prompt := st.chat_input("Start your coaching session..."):
         
     except Exception as e:
         st.error(f"An error occurred: {e}")
+
 
